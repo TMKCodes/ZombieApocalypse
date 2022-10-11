@@ -1,0 +1,121 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch ZombieApocalypse (Debug)",
+			"request": "launch",
+			"program": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/Binaries/Linux/UnrealGame-Linux-Debug",
+			"preLaunchTask": "ZombieApocalypse Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypse (DebugGame)",
+			"request": "launch",
+			"program": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"preLaunchTask": "ZombieApocalypse Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypse (Development)",
+			"request": "launch",
+			"program": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/Binaries/Linux/UnrealGame",
+			"preLaunchTask": "ZombieApocalypse Linux Development Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypse (Test)",
+			"request": "launch",
+			"program": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/Binaries/Linux/UnrealGame-Linux-Test",
+			"preLaunchTask": "ZombieApocalypse Linux Test Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypse (Shipping)",
+			"request": "launch",
+			"program": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"preLaunchTask": "ZombieApocalypse Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypseEditor (Debug)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "ZombieApocalypseEditor Linux Debug Build",
+			"args": [
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypseEditor (DebugGame)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "ZombieApocalypseEditor Linux DebugGame Build",
+			"args": [
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch ZombieApocalypseEditor (Development)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "ZombieApocalypseEditor Linux Development Build",
+			"args": [
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/opt/unreal-engine"
+		}
+	]
+}

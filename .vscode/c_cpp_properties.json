@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/.vscode/compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

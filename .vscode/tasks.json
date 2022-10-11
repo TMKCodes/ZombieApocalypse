@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ZombieApocalypse Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"Linux",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Test",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypse LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypse LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypse",
+				"LinuxArm64",
+				"Shipping",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypseEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Debug",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypseEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ZombieApocalypseEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "ZombieApocalypseEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ZombieApocalypseEditor",
+				"Linux",
+				"Development",
+				"/home/tonto/Repositories/UnrealEngine/ZombieApocalypse/ZombieApocalypse.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		}
+	]
+}

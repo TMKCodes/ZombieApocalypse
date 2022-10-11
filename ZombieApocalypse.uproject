@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{6730EC56-191E-4D6B-9520-D433890ACB1F}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ZombieApocalypse",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
